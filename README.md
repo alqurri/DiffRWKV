@@ -66,8 +66,10 @@ This code base uses certain code blocks and helper functions from:
 * [Diffusion Models for Implicit Image Segmentation Ensembles](https://github.com/JuliaWolleb/Diffusion-based-Segmentation)
 * [MedSegDiff](https://github.com/KidsWithTokens/MedSegDiff)
 * [MedSegDiff-V2](https://github.com/KidsWithTokens/MedSegDiff)
-* [Swin-Unet](https://github.com/Beckschen/TransUNet/tree/main) 
+* [DiT](https://github.com/facebookresearch/DiT)
 * [Vision-RWKV](https://github.com/OpenGVLab/Vision-RWKV)
+* [Swin-Unet](https://github.com/Beckschen/TransUNet/tree/main) 
+
 
 
 ## Citation
