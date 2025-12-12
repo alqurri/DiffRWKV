@@ -74,4 +74,11 @@ This code base uses certain code blocks and helper functions from:
 
 ## Citation
 
-
+Please cite
+~~~
+@inproceedings{ahmedmedical,
+  title={Medical Image Segmentation with Diffusion Probabilistic Model},
+  author={Ahmed, AL-Qurri and Almekkawy, Mohamed Khaled},
+  booktitle={Medical Imaging with Deep Learning}
+}
+~~~
