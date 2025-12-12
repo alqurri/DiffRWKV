@@ -63,7 +63,7 @@ python scripts/segmentation_env.py --inp_pth ./tmp_out/ --out_pth ./isic/ISBI201
 
 ## References and Acknowledgements
 This code base uses certain code blocks and helper functions from:
-* [Diffusion Models for Implicit Image Segmentation Ensembles](https://github.com/JuliaWolleb/Diffusion-based-Segmentation)
+* [EnsemDiff](https://github.com/JuliaWolleb/Diffusion-based-Segmentation)
 * [MedSegDiff](https://github.com/KidsWithTokens/MedSegDiff)
 * [MedSegDiff-V2](https://github.com/KidsWithTokens/MedSegDiff)
 * [DiT](https://github.com/facebookresearch/DiT)
