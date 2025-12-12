@@ -5,7 +5,34 @@ The codes for the work "Medical Image Segmentation with Diffusion Probabilistic 
 
 ## 2. Prepare data
 
-- The datasets we used are provided by TransUnet's authors. [Get processed data in this link] (Synapse: https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd and ACDC: https://drive.google.com/drive/folders/1KQcrci7aKsYZi1hQoZ3T3QUtcy7b--n4).
+### Melanoma Segmentation from Skin Images
+1. Download ISIC dataset from https://challenge.isic-archive.com/data/. Your dataset folder under "data" should be like:
+
+~~~
+data
+|   ----ISIC
+|       ----Test
+|       |   |   ISBI2016_ISIC_Part1_Test_GroundTruth.csv
+|       |   |   
+|       |   ----ISBI2016_ISIC_Part1_Test_Data
+|       |   |       ISIC_0000003.jpg
+|       |   |       .....
+|       |   |
+|       |   ----ISBI2016_ISIC_Part1_Test_GroundTruth
+|       |           ISIC_0000003_Segmentation.png
+|       |   |       .....
+|       |           
+|       ----Train
+|           |   ISBI2016_ISIC_Part1_Training_GroundTruth.csv
+|           |   
+|           ----ISBI2016_ISIC_Part1_Training_Data
+|           |       ISIC_0000000.jpg
+|           |       .....
+|           |       
+|           ----ISBI2016_ISIC_Part1_Training_GroundTruth
+|           |       ISIC_0000000_Segmentation.png
+|           |       .....
+~~~
 
 ## 3. Environment
 
