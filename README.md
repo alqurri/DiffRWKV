@@ -36,10 +36,11 @@ python scripts/segmentation_env.py --inp_pth ./tmp_out/ --out_pth ./isic/ISBI201
 
 ## References and Acknowledgements
 This code base uses certain code blocks and helper functions from:
-* [TransUNet](https://github.com/Beckschen/TransUNet/tree/main)
+* [Diffusion Models for Implicit Image Segmentation Ensembles](https://github.com/JuliaWolleb/Diffusion-based-Segmentation)
+* [MedSegDiff](https://github.com/KidsWithTokens/MedSegDiff)
+* [MedSegDiff](https://github.com/KidsWithTokens/MedSegDiff)
 * [Swin-Unet](https://github.com/Beckschen/TransUNet/tree/main) 
 * [Vision-RWKV](https://github.com/OpenGVLab/Vision-RWKV)
-* [CoTrFuse](https://github.com/BinYCn/CoTrFuse)
 
 
 ## Citation
