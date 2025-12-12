@@ -1,4 +1,5 @@
-# DiffRWKV
+# DiffRWKV: Medical Image Segmentation with Diffusion
+Probabilistic Model
 The codes for the work "Medical Image Segmentation with Diffusion Probabilistic Model". I hope this will help you to reproduce the results.
 
 
