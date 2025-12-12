@@ -18,17 +18,20 @@ The codes for the work "Medical Image Segmentation with Diffusion Probabilistic 
 - Train
 
 ```bash
-sh train.sh 
-# or 
-python train.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
+ 
+python scripts/segmentation_train.py --data_name ISIC --data_dir ./isic/ --out_dir ./tmp_out --image_size 224 --num_channels 128 --class_cond False --num_res_blocks 2 --num_heads 1 --learn_sigma True --use_scale_shift_norm False --attention_resolutions 16 --diffusion_steps 1000 --noise_schedule linear --rescale_learned_sigmas False --rescale_timesteps False --lr 1e-4 --batch_size 8 --lr_anneal_steps 50000 
+```
+
+- Sample 
+
+```bash
+python scripts/segmentation_sample.py --data_name ISIC --data_dir ./isic/ --out_dir ./tmp_out --model_path ./tmp_out/emasavedmodel_0.9999_050000.pt --image_size 224 --num_channels 128 --class_cond False --num_res_blocks 2 --num_heads 1 --learn_sigma True --use_scale_shift_norm False --attention_resolutions 16 --diffusion_steps 1000 --noise_schedule linear --rescale_learned_sigmas False --rescale_timesteps False --num_ensemble 5 
 ```
 
 - Test 
 
 ```bash
-sh test.sh 
-# or 
-python test.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --is_saveni --volume_path your DATA_DIR --output_dir your OUT_DIR --max_epoch 150 --base_lr 0.05 --img_size 224 --batch_size 24
+python scripts/segmentation_env.py --inp_pth ./tmp_out/ --out_pth ./isic/ISBI2016_ISIC_Part1_Test_GroundTruth/
 ```
 
 ## References and Acknowledgements
