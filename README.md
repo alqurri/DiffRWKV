@@ -40,22 +40,21 @@ data
 
 ## 4. Train/Test
 
-- Run the train script on synapse dataset. The batch size we used is 4. Use larger batch size if you have enough memory
 
-- Train
+- Training
 
 ```bash
  
 python scripts/segmentation_train.py --data_name ISIC --data_dir ./isic/ --out_dir ./tmp_out --image_size 224 --num_channels 128 --class_cond False --num_res_blocks 2 --num_heads 1 --learn_sigma True --use_scale_shift_norm False --attention_resolutions 16 --diffusion_steps 1000 --noise_schedule linear --rescale_learned_sigmas False --rescale_timesteps False --lr 1e-4 --batch_size 8 --lr_anneal_steps 50000 
 ```
 
-- Sample 
+- Sampling 
 
 ```bash
 python scripts/segmentation_sample.py --data_name ISIC --data_dir ./isic/ --out_dir ./tmp_out --model_path ./tmp_out/emasavedmodel_0.9999_050000.pt --image_size 224 --num_channels 128 --class_cond False --num_res_blocks 2 --num_heads 1 --learn_sigma True --use_scale_shift_norm False --attention_resolutions 16 --diffusion_steps 1000 --noise_schedule linear --rescale_learned_sigmas False --rescale_timesteps False --num_ensemble 5 
 ```
 
-- Test 
+- Evaluation 
 
 ```bash
 python scripts/segmentation_env.py --inp_pth ./tmp_out/ --out_pth ./isic/ISBI2016_ISIC_Part1_Test_GroundTruth/
