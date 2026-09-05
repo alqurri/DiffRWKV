@@ -1,6 +1,8 @@
-# DiffRWKV: Medical Image Segmentation with Diffusion
+# Image-Conditioned Mask Diffusion with Hierarchical RWKV for
+Medical Image Segmentation
 Probabilistic Model
-The codes for the work "Medical Image Segmentation with Diffusion Probabilistic Model". I hope this will help you to reproduce the results.
+The codes for the work "Image-Conditioned Mask Diffusion with Hierarchical RWKV for
+Medical Image Segmentation". I hope this will help you to reproduce the results.
 
 
 
